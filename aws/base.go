@@ -70,12 +70,12 @@ func MakeTemplate(awsSession *session.Session, parameters *Parameters) (*cfn.Tem
 			Default:     "3",
 		},
 		"KeyPair": &cfn.Parameter{
-			Description: "Number of master instances",
+			Description: "SSH key pair",
 			Type:        "AWS::EC2::KeyPair::KeyName",
 			Default:     "",
 		},
 		"Application": &cfn.Parameter{
-			Description: "Number of master instances",
+			Description: "Application name",
 			Type:        "String",
 			Default:     "",
 		},
